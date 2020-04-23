@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="card mb-3" *ngFor="let Article of articleList">
+    <img class="card-img-top" width="auto" src="http://localhost:44444/Images/ArticlePicture/{{Article.Picture.Path}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{Article.Title}}</h5>
+      <p class="card-text">{{Article.Description}}</p>
+      <p class="card-text"><small class="text-muted">{{Article.CreatedDate}}</small></p>
+    </div>
+  </div>
+</div>
